@@ -15,6 +15,11 @@
 </template>
 
 <script setup>
+import { inject } from 'vue'
+
+const arr = inject('arr')
+console.log(arr)
+
 const { product } = defineProps({
     product: {
         type: Object,

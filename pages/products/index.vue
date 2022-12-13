@@ -7,6 +7,9 @@
 
 <script setup>
 import Product from '~~/components/products/Product.vue'
+import { provide } from 'vue'
+
+provide('arr', [1, 2, 3, 4, 5])
 
 const { data: products } = await useFetch('https://fakestoreapi.com/products')
 </script>
